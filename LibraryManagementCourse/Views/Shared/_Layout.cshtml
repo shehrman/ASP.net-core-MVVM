@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LibraryManagementCourse</title>
+    <title>@ViewData["Title"] - LibraryManagement</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,7 +17,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,22 +26,52 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">LibraryManagementCourse</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">LibraryManagement</a>
             </div>
             <div class="navbar-collapse collapse">
+
+
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="">Home</a></li>
+                    <li><a asp-area="" asp-controller="Customer" asp-action="">Customer</a></li>
+                    <li><a asp-area="" asp-controller="Author" asp-action="">Author</a></li>
+                    <li><a asp-area="" asp-controller="Book" asp-action="List">Book</a></li>
+                    <li><a asp-area="" asp-controller="Lend" asp-action="">Lend</a></li>
+                    <li><a asp-area="" asp-controller="Return" asp-action="">Return</a></li>
                 </ul>
+
             </div>
         </div>
     </nav>
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="Home" role="tab" aria-controls="home">Home</a>
+
+                <a class="list-group-item list-group-item-action list-group-item-warning" href="Lend" role="tab" aria-controls="messages">Lend</a>
+                <a class="list-group-item list-group-item-action list-group-item-warning" href="Customer" role="tab" aria-controls="Customer">Customer</a>
+            </div>
+        </div>
+
+    </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - LibraryManagementCourse</p>
+
+          
+            <div class="btn-group dropleft">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                </button>
+                <div class="dropdown-menu" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="Customer">Customer</a>
+                    <a class="dropdown-item" href="Home"> Home </a>
+                </div>
+            </div>
+            <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2r8iBsm_yIgFSQitzM1lwbq1UFpyVEoqnAWrTcoXfu39e2C" /> </div>
+            <p>&copy; 2018 - shehrman ibrahim </p>
         </footer>
     </div>
 
