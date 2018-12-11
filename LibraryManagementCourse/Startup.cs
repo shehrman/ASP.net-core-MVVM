@@ -26,13 +26,13 @@ namespace LibraryManagementCourse
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<LibraryDbContext>(options => options.UseInMemoryDatabase("LibraryContext"));
-         
+            services.AddDbContext<LibraryDbContext>(options => options.UseInMemoryDatabase("LibraryContext"));
+
 
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<IAuthorRepository, AuthorRepository>();
             services.AddTransient<IBookRepository, BookRepository>();
-            services.AddDbContext<LibraryDbContext>(option => option.UseSqlServer("Data Source=.;Initial Catalog=MyDBLibrary;Integrated Security=True"));
+            //services.AddDbContext<LibraryDbContext>(option => option.UseSqlServer("Data Source=.;Initial Catalog=MyDBLibrary;Integrated Security=True"));
 
             services.AddMvc();
 
@@ -60,7 +60,7 @@ namespace LibraryManagementCourse
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //DbInitializer.Seed(app);
+            DbInitializer.Seed(app);
         }
     }
 }

@@ -18,24 +18,20 @@ namespace LibraryManagementCourse.Data
 
 
                 // Add Customers
-                var justin = new Customer { Name = "Justin Noon" };
+                var justin = new Customer { Name = "shero Noon" };
 
-                var willie = new Customer { Name = "Willie Parodi" };
+                var willie = new Customer { Name = "Abo  ruby" };
 
                 var leoma = new Customer { Name = "Leoma  Gosse" };
-                var ana = new Customer { Name = "ana jons" };
+                var ana = new Customer { Name = "na jons" };
 
-                var shehrman = new Customer { Name = "shehrman ibrahim" };
-
-                var heba = new Customer { Name = " heba Alkateb " };
+            
 
                 var kateb = new Customer { Name = "kateb  heba" };
 
                 context.Customers.Add(justin);
                 context.Customers.Add(willie);
                 context.Customers.Add(ana);
-                context.Customers.Add(shehrman);
-                context.Customers.Add(heba);
                 context.Customers.Add(kateb);
                 context.Customers.Add(leoma);
 
