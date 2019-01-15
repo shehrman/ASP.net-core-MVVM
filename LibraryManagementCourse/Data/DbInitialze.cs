@@ -27,7 +27,7 @@ namespace LibraryManagementCourse.Data
 
             
 
-                var kateb = new Customer { Name = "kateb  heba" };
+                var kateb = new Customer { Name = "sh hba" };
 
                 context.Customers.Add(justin);
                 context.Customers.Add(willie);
