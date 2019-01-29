@@ -41,5 +41,17 @@
    font-size:20px;
 
 }
+.HomeFoter{
+    text-align:end;
+    font-size:large;
+    padding:10px;
+    margin:12px;
+}
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #940837;
+    border-color: #1b1c1d;
+    text-align: center;
+}
 
 
