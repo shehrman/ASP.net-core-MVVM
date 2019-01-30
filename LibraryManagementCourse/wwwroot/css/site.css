@@ -37,9 +37,9 @@
 }
 .Title {
     text-align: center;
-    color: #337ab7;
-   font-size:20px;
-
+    color: #940837;
+    font-size: 20px;
+    margin: -5px;
 }
 .HomeFoter{
     text-align:end;
@@ -49,9 +49,32 @@
 }
 .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #940837;
     border-color: #1b1c1d;
     text-align: center;
+    background-image: url('../images/ladda ned.jpg');
+}
+.backLayout {
+    background-image: url('../images/ba2.jpg');
+}
+.body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    border-color: #337ab7;
+    background-image: url('../images/ladda ned.jpg');
 }
 
-
+element.style {
+    background-image: url('../images/ba2.jpg');
+    
+}
+.panel-body {
+    padding: 15px;
+    background-image: url('../images/world.jpg');
+    color:white;
+}
