@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] -Library Management</title>
-
+    <title>@ViewData["Title"]  application </title>
+    
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -27,11 +27,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Library Management</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">application</a>
                 </div>
                 <div class="navbar-collapse collapse">
-
-
                     <ul class="nav navbar-nav">
                         <li><a asp-area="" asp-controller="Home" asp-action="">Home</a></li>
                         <li><a asp-area="" asp-controller="Customer" asp-action="">Customer</a></li>
@@ -40,8 +38,18 @@
                         <li><a asp-area="" asp-controller="Lend" asp-action="">Lend</a></li>
                         <li><a asp-area="" asp-controller="Return" asp-action="">Return</a></li>
                     </ul>
-
-                </div>
+                    <div class="nabbb">
+                        <div class="nav navbar-light">
+                            <div class="nav navbar-right">
+                                <ul class="nav navbar-nav">
+                                    <li> <a asp-area="" asp-controller="Contact" asp-action="Index" class="glyphicon glyphicon-phone-alt">  contact</a></li>
+                                    <li><a asp-area="" asp-controller="" asp-action="" class="glyphicon glyphicon-folder-open">   Departments</a></li>
+                                    <li><a asp-area="" asp-controller="Contact" asp-action="Details" class="glyphicon glyphicon-user">   Logain</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
             </div>
         </nav>
         <div class="row">

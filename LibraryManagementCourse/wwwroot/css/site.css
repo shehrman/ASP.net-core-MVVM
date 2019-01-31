@@ -2,38 +2,31 @@
     padding-top: 10px;
     padding-bottom: 20px;
 }
-
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
 }
-
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
 }
-
 /* QR code generator */
 #qrCode {
     margin: 15px;
 }
-
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
     }
-
-
 }
 .Title {
     text-align: center;
@@ -51,7 +44,8 @@
     color: #fff;
     border-color: #1b1c1d;
     text-align: center;
-    background-image: url('../images/ladda ned.jpg');
+    background-image: url('../images/ladda ned.jpg'); 
+    border-image-slice:fill;
 }
 .backLayout {
     background-image: url('../images/ba2.jpg');
@@ -68,7 +62,6 @@
     border-color: #337ab7;
     background-image: url('../images/ladda ned.jpg');
 }
-
 element.style {
     background-image: url('../images/ba2.jpg');
     
@@ -77,4 +70,25 @@ element.style {
     padding: 15px;
     background-image: url('../images/world.jpg');
     color:white;
+}
+.nabbb{
+       text-align:right;
+}
+.contact {
+    text-align: match-parent;
+    background-image: url('../images/ladda ned.jpg');
+    padding :20px;
+}
+.contact h2{
+    color:white;
+    background-color:blue;
+}
+.login {
+    padding: 15px;
+    width: 400px;
+    min-height: 400px;
+    margin: 2% auto 0 auto;
+    .login h2 {
+    text-align:center;
+    color:black;
 }
